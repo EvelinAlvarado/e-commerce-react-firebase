@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ProductType } from "../types/productType";
+import { ProductType } from "../types/ProductType";
 import { useCart } from "../context/CustomHooks";
 
 interface ItemCountProps {
