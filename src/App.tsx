@@ -4,7 +4,7 @@ import { NavBar } from "./components/NavBar";
 import { AboutUs } from "./components/AboutUs";
 import { ItemDetailContainer } from "./components/ItemDetailContainer";
 import { HomePage } from "./components/Home";
-import { Contacts } from "./components/Contacts";
+// import { Contacts } from "./components/Contacts";
 import { CartProvider } from "./context/CartContext";
 import { Cart } from "./components/Cart";
 import { Checkout } from "./components/Checkout";
@@ -12,7 +12,7 @@ import { ThankYou } from "./components/ThankYou";
 
 function App() {
   return (
-    <div className="bg-[#fffefd] h-screen flex flex-col">
+    <div className="bg-[#fffefd] min-h-screen flex flex-col">
       <CartProvider>
         <BrowserRouter>
           <NavBar />
@@ -22,7 +22,7 @@ function App() {
             <Route path="/item/:id" element={<ItemDetailContainer />} />
             <Route path="/products/" element={<ItemListContainer />} />
             <Route path="/products/:category" element={<ItemListContainer />} />
-            <Route path="/contact" element={<Contacts />} />
+            {/* <Route path="/contact" element={<Contacts />} /> */}
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/thank-you" element={<ThankYou />} />

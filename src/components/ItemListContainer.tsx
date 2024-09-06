@@ -44,8 +44,8 @@ export const ItemListContainer = (): JSX.Element => {
   }, [category]);
 
   return (
-    <div className="w-full flex justify-center items-center mb-9 h-full overflow-auto relative">
-      <div className="max-w-7xl flex flex-col absolute top-0">
+    <div className="w-full flex justify-center items-center mb-9 h-full">
+      <div className="max-w-7xl flex flex-col">
         <div>
           <ItemList products={products} />
         </div>

@@ -18,6 +18,26 @@ export const Cart = () => {
 
   console.log(cartItems);
 
+  if (cartItems.length === 0) {
+    return (
+      <div className="w-full flex flex-col items-center py-10 space-y-8">
+        <div className="w-full max-w-2xl bg-white shadow-lg rounded-lg p-6 text-center">
+          <h2 className="text-2xl font-semibold text-[#233a5e] mb-6">
+            Your cart is empty!
+          </h2>
+          <p className="text-gray-600 mb-4">
+            It looks like you haven't added anything to your cart yet. Start
+            shopping to find something you like!
+          </p>
+          <Link to="/products">
+            <button className="bg-[#ffb603] text-white font-bold py-2 px-4 rounded-lg hover:bg-yellow-600 transition duration-300">
+              Start Shopping
+            </button>
+          </Link>
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="w-full flex flex-col items-center py-10 space-y-8">
       <div className="w-full max-w-2xl bg-white shadow-lg rounded-lg p-6">

@@ -22,30 +22,32 @@ export const ItemList = ({ products }: ItemCardProps): JSX.Element => {
   // }, [category, products]);
   // console.log(productsSelected);
   return (
-    <div className="flex flex-row flex-wrap justify-between gap-y-5">
-      {products.map((card) => (
-        <div
-          key={card.id}
-          className="flex flex-col items-center justify-center text-center rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
-        >
-          <img
-            className="w-full h-48 object-cover rounded-t-lg"
-            src={card.image}
-            alt={card.title}
-          />
-          <div className="flex flex-col h-full justify-between p-4 gap-2 items-center">
-            <p className="font-bold text-[#233a5e]">{card.title}</p>
-            <span className="text-[#233a5e]">Price ${card.price}</span>
-            <p className="text-[#233a5e]">Category: {card.category}</p>
-            <Link
-              className="p-2 bg-[#ffb603] text-white font-bold hover:bg-yellow-600 transition duration-300 w-fit rounded-xl"
-              to={`/item/${card.id}`}
-            >
-              View more
-            </Link>
+    <div className="w-full flex justify-center items-center">
+      <div className="max-w-7xl w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+        {products.map((card) => (
+          <div
+            key={card.id}
+            className="flex flex-col items-center justify-center text-center rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+          >
+            <img
+              className="w-full h-48 object-cover rounded-t-lg"
+              src={card.image}
+              alt={card.title}
+            />
+            <div className="flex flex-col h-full justify-between p-4 gap-2 items-center">
+              <p className="font-bold text-[#233a5e]">{card.title}</p>
+              <span className="text-[#233a5e]">Price ${card.price}</span>
+              <p className="text-[#233a5e]">Category: {card.category}</p>
+              <Link
+                className="p-2 bg-[#ffb603] text-white font-bold hover:bg-yellow-600 transition duration-300 w-fit rounded-xl"
+                to={`/item/${card.id}`}
+              >
+                View more
+              </Link>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
