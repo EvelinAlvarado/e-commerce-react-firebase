@@ -1,5 +1,5 @@
 <div align="center"> 
-  <h1>E-commerce</h1>
+  <h1>E-Commerce Application with TypeScript and Firestore</h1>
 </div>
 <div align="center"> 
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
@@ -14,3 +14,35 @@
   <img src="https://img.shields.io/badge/React_Hook_Form-EC5990?style=for-the-badge&logo=react-hook-form&logoColor=white">
   <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" />
 </div>
+
+This is a full-stack e-commerce platform developed to practice TypeScript and Firestore for CRUD operations. The project features a modern and responsive UI, utilizing various technologies to deliver a seamless shopping experience.
+
+## Description
+
+This project aims to enhance my skills in TypeScript and Firestore by implementing a complete e-commerce solution. Users can browse products, add items to their cart, and proceed to checkout. The application leverages Firestore for real-time data management and persistence.
+
+## Key Features
+
+- **Product Listings**: Browse a variety of products with detailed information.
+- **Shopping Cart**: Add, remove, and update product quantities in the cart.
+- **Checkout**: Complete your purchase with a simple checkout form.
+- **Responsive Design**: Fully functional on both desktop and mobile devices.
+- **Real-time Updates**: Dynamic updates with Firestore for an interactive user experience.
+- **Form Handling**: User input management with React Hook Form.
+
+## Screenshots
+<div align="center">
+  <img src="public/MacBook Pro-1725631009285.jpeg" width="80%" />
+  <img src="public/MacBook Pro-1725631084340.jpeg" width="80%" />
+  <img src="public/MacBook Pro-1725631101500.jpeg" width="80%" />
+</div>
+
+
+## Additional Information
+
+- **Developed by**: Evelin Alvarado
+- **GitHub**: [EvelinAlvarado](https://github.com/EvelinAlvarado)
+- **LinkedIn**: [Evelin Alvarado](https://www.linkedin.com/in/evelinalvarado/)
+- **Live Project**: [E-Commerce Application](https://e-commerce-react-firebase-two.vercel.app/)
+
+Feel free to explore the code and contribute to the project!
