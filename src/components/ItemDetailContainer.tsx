@@ -42,7 +42,7 @@ export const ItemDetailContainer = (): JSX.Element => {
 
   return (
     <div className="w-full flex justify-center items-center">
-      <div className="max-w-7xl flex flex-row gap-10 h-full">
+      <div className=" lg:max-w-7xl flex flex-col lg:flex-row mx-8 gap-10 h-full">
         <img
           className="rounded-2xl w-[400px]"
           src={item.image}
